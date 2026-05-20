@@ -1,7 +1,9 @@
 # Log Intelligence Analyzer
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
+
 Pythonベースのログ解析・監視ツール。サーバーログの分析、エラー追跡、レポート生成を行うバックエンドプロジェクト。
+
 Python 기반 로그 분석 및 모니터링 도구. 서버 로그 분석, 오류 추적 및 리포트 생성을 수행하는 백엔드 프로젝트.
 
 ---
@@ -46,8 +48,6 @@ docker run -it log-analyzer
 
 ## Example Outout / 出力例 / 출력 예시
 
-```
-
 <p align="center">
   <img src="./terminal_output.png" width="700"/>
 </p>
@@ -57,8 +57,6 @@ docker run -it log-analyzer
 ## Docker Container / Dockerコンテナ / Docker 컨테이너
 
 Containerized using Docker with a lightweight Python 3.11 slim image to support portable backend execution and deployment workflows.
-
-```
 
 <p align="center">
   <img src="./docker_container.png" width="900"/>
@@ -70,16 +68,15 @@ Containerized using Docker with a lightweight Python 3.11 slim image to support 
 
 ```text
 log-intelligence-analyzer/
-```
 
-├─analyzer.py
-├─parser.py
-├─analytics.py
-├─reporter.py
+├── analyzer.py
+├── parser.py
+├── analytics.py
+├── reporter.py
 ├── sample_logs/
 │   └── server.log
 └── analysis_report.txt
-
+```
 ---
 
 ## Learning Outcomes / 学習成果 / 학습 성과
