@@ -46,7 +46,7 @@ docker run -it log-analyzer
 
 ---
 
-## Example Output / 出力例 ||  Docker Container / Dockerコンテ
+## Example Output & Docker Container
 
 <table>
 <tr>
