@@ -1,4 +1,4 @@
-# Log Intelligence Analyzer
+# Inventory Management System
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
 
@@ -46,21 +46,27 @@ docker run -it log-analyzer
 
 ---
 
-## Example Outout / 出力例 / 출력 예시
+## Example Output / 出力例 ||  Docker Container / Dockerコンテ
 
-<p align="center">
-  <img src="./terminal_output.png" width="700"/>
-</p>
+<table>
+<tr>
+<td width="50%" align="center">
 
----
+### Example Output
 
-## Docker Container / Dockerコンテナ / Docker 컨테이너
+<img src="./terminal_output.png" width="100%"/>
 
-Containerized using Docker with a lightweight Python 3.11 slim image to support portable backend execution and deployment workflows.
+</td>
 
-<p align="center">
-  <img src="./docker_container.png" width="900"/>
-</p>
+<td width="50%" align="center">
+
+### Docker Container
+
+<img src="./docker_container.png" width="100%"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
