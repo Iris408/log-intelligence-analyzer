@@ -1,4 +1,4 @@
-# Inventory Management System
+# Log Intelligence Analayzer
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
 
