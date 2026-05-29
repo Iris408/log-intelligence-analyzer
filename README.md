@@ -1,4 +1,5 @@
-# Log Intelligence Analyzer | ログインテリジェンスアナライザー
+# Log Intelligence Analyzer 
+## ログインテリジェンスアナライザー
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
 Pythonベースのログ解析・監視ツール。サーバーログの分析、エラー追跡、レポート生成を行うバックエンドプロジェクト。
