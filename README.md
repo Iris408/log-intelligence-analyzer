@@ -63,6 +63,7 @@ http://127.0.0.1:8000/docs
 | GET | /logs/summary | Returns log severity summary |
 | GET | /logs/errors | Returns error log entries |
 | GET | /logs/report | Returns generated analysis report |
+```
 
 ---
 
