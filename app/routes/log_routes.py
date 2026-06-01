@@ -9,6 +9,7 @@ from app.services.log_service import (
     get_stored_logs,
     import_logs_to_database,
     read_analysis_report,
+    get_latest_log_entries,
 )
 
 
@@ -28,15 +29,18 @@ def error_logs():
 def analysis_report():
     return {"report": read_analysis_report()}
 
+@router.get("/stored")
+def stored_logs(db: Session = Depends(get_db)):
+    return {"logs": get_stored_logs(db)}
+
+@router.get("/live")
+def live_logs(limit: int =5):
+    return get_latest_log_entries(limit)
 
 @router.post("/import")
 def import_logs(db: Session = Depends(get_db)):
     return import_logs_to_database(db)
 
-
-@router.get("/stored")
-def stored_logs(db: Session = Depends(get_db)):
-    return {"logs": get_stored_logs(db)}
 
 @router.delete("/stored")
 def delete_stored_logs(db: Session = Depends(get_db)):

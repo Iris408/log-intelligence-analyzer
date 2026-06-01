@@ -108,3 +108,22 @@ def clear_stored_logs(db: Session):
         "message": "Stored logs cleared successfully",
         "deleted_count": deleted_count,
     }
+
+def get_latest_log_entries(limit: int = 5):
+    lines = read_log_file()
+
+    latest_lines = lines[-limit:]
+    results = []
+
+    for line in latest_lines:
+        clean_line = line.strip()
+
+        if not clean_line:
+            continue
+
+        results.append({
+            "severity": get_log_severity(clean_line),
+            "message": clean_line,
+        })
+
+    return { "latest_logs": results, "total_returned": len(results) }
