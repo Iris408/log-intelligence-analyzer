@@ -69,6 +69,7 @@ http://127.0.0.1:8000/docs
 | GET | /logs/report | Returns generated analysis report |
 | POST | /logs/import | Imports log entries into PostgreSQL |
 | GET | /logs/stored | Returns stored log entries from PostgreSQL |
+| DELETE | /logs/stored | Clears stored log entries from PostgreSQL |
 ```
 
 ---
