@@ -112,7 +112,6 @@ log-intelligence-analyzer/
 
 ## Future Improvements / 今後の改善点
 
-- Live log monitoring
 - Background live log monitioring
 - Slack/email alert integration
 - CI/CD pipeline
