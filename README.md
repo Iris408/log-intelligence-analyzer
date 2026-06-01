@@ -75,7 +75,7 @@ http://127.0.0.1:8000/docs
 ---
 
 ## Project Structure / プロジェクト構成
-
+```markdown
 log-intelligence-analyzer/
 ├── app/
 │   ├── main.py
@@ -93,6 +93,7 @@ log-intelligence-analyzer/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
