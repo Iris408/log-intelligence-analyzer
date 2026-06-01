@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.services.log_service import (
+    clear_stored_logs,
     get_error_logs,
     get_log_summary,
     get_stored_logs,
@@ -36,3 +37,7 @@ def import_logs(db: Session = Depends(get_db)):
 @router.get("/stored")
 def stored_logs(db: Session = Depends(get_db)):
     return {"logs": get_stored_logs(db)}
+
+@router.delete("/stored")
+def delete_stored_logs(db: Session = Depends(get_db)):
+    return clear_stored_logs(db)

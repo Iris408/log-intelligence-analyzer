@@ -98,3 +98,13 @@ def get_stored_logs(db: Session):
             "created_at": log.created_at})
         
     return results
+
+def clear_stored_logs(db: Session):
+    deleted_count = db.query(LogEntry).delete()
+
+    db.commit()
+
+    return {
+        "message": "Stored logs cleared successfully",
+        "deleted_count": deleted_count,
+    }
