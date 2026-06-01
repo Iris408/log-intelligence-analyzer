@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 
 from app.routes.log_routes import router as log_router
+from app.database import Base, engine
+from app.models.log_model import LogEntry
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Log Intelligence Analyzer API",

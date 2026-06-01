@@ -1,0 +1,32 @@
+services:
+  api:
+    build: .
+    container_name: log-intelligence-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://log_user:log_password@db:5432/log_analyzer_db
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: on-failure
+
+  db:
+    image: postgres:16
+    container_name: log-intelligence-db
+    environment:
+      POSTGRES_USER: log_user
+      POSTGRES_PASSWORD: log_password
+      POSTGRES_DB: log_analyzer_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - log_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U log_user -d log_analyzer_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  log_data:
