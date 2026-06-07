@@ -92,7 +92,6 @@ http://127.0.0.1:8000/docs
 
 ## API Endpoints
 
-```text
 | Method | Endpoint | Description |
 | --- | --- | --- |
 | GET | / | API health/status route |
@@ -103,12 +102,9 @@ http://127.0.0.1:8000/docs
 | GET | /logs/stored | Returns stored log entries from PostgreSQL |
 | GET | /logs/live | Returns the latest log entries from the log file |
 | DELETE | /logs/stored | Clears stored log entries from PostgreSQL |
-```
-各APIエンドポイントはFastAPIのSwagger UIから確認できます。/logs/import はサンプルログをPostgreSQLへ取り込み、/logs/stored は保存済みログを取得します。
 
 ## Project Structure / プロジェクト構成
-
-```text
+```markdown
 log-intelligence-analyzer/
 ├── app/
 │   ├── main.py
