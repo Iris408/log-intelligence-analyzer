@@ -1,27 +1,34 @@
 # Log Intelligence Analyzer 
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
+
 ## ログインテリジェンスアナライザー
 Pythonベースのログ解析・監視ツール。サーバーログの分析、エラー追跡、レポート生成を行うバックエンドプロジェクト。
 
 ## Current Status / 現在のステータス
-| Area | Status |
-| --- | --- |
-| CLI log analysis | ✅ Complete |
-| Log severity categorization | ✅ Complete |
-| Error frequency analysis | ✅ Complete |
-| Timestamp/hour-based analysis | ✅ Complete |
-| Exportable analysis reports | ✅ Complete |
-| Color-coded CLI output | ✅ Complete |
-| Modular backend architecture | ✅ Complete |
-| FastAPI, Swagger API layer | ✅ Complete |
-| PostgreSQL log storage | ✅ Storage |
-| Docker Support | ✅ Complete |
-| Docker Compose API + PostgreSQL setup | ✅ Complete |
-| Live log preview route | ✅ Complete |
-| Clear stored logs route | ✅ Complete |
-| Slack/email alert integration | 🚧 Planned |
-| CI/CD pipeline | 🚧 Planned |
+
+Log Intelligence Analyzer is a FastAPI backend project for importing, storing, analysing, and reporting application logs.
+
+### Completed
+- FastAPI backend routes
+- PostgreSQL log storage
+- Docker support
+- Docker Compose setup
+- Log import route
+- Stored logs route
+- Error summary/report routes
+
+### Known Issue
+Running `/logs/import` multiple times can create duplicate stored log entries.
+
+### Next Roadmap
+- Add duplicate prevention for imported logs
+- Add log hash/checksum field
+- Add clear logs route for development testing
+- Add severity filtering
+- Add Slack/email alerts for critical logs
+- Expand FastAPI dashboard
+- Add README examples for sample log input/output
 
 ## Features / 機能
 | EN | 日本語 |
