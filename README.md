@@ -1,8 +1,9 @@
-# Log Intelligence Analyzer 
+![Backend CI](https://github.com/Iris408/log-intelligence-analyzer/actions/workflows/backend-ci.yml/badge.svg)
+
+# Log Intelligence Analyzer / ログインテリジェンスアナライザー
 
 Python-based log analysis and monitoring tool designed to parse, analyse, and report operational server logs through a modular backend architecture.
 
-## ログインテリジェンスアナライザー
 Pythonベースのログ解析・監視ツール。サーバーログの分析、エラー追跡、レポート生成を行うバックエンドプロジェクト。
 
 ## Current Status / 現在のステータス
@@ -109,6 +110,17 @@ http://127.0.0.1:8000/docs
 | GET | /logs/stored | Returns stored log entries from PostgreSQL |
 | GET | /logs/live | Returns the latest log entries from the log file |
 | DELETE | /logs/stored | Clears stored log entries from PostgreSQL |
+
+## CI/CD
+
+This project uses GitHub Actions to run automated checks on every push and pull request.
+
+Current pipeline:
+
+- Install dependencies
+- Validate Python syntax
+- Run tests when available
+- Build project or Docker image where applicable
 
 ## Project Structure / プロジェクト構成
 ```markdown
