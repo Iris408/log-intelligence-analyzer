@@ -1,4 +1,5 @@
 ![Backend CI](https://github.com/Iris408/log-intelligence-analyzer/actions/workflows/backend-ci.yml/badge.svg)
+![Docker CI](https://github.com/Iris408/inventory-management-system/actions/workflows/docker-ci.yml/badge.svg)
 
 # Log Intelligence Analyzer / ログインテリジェンスアナライザー
 
